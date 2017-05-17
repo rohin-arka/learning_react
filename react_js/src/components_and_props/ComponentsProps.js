@@ -51,4 +51,14 @@ ReactDOM.render(element, document.getElementById('root'));
 
 // NOTE::
 // Always start component with a capital letter
-// For example <div /> represent represent html tag whereas <Welcome /> represent component 
+// For example <div /> represent represent html tag whereas <Welcome /> represent component
+
+// Props are read only
+// when creating component as a funtion or a class it should never modified passed props
+// Example
+// (a, b) => { return a + b; } ES6 script
+// This type of function is called as pure because they do not change the parameter input returns
+// desire sum by sunming up parameters.
+
+// Though function can also modify value but recat functional component should act as pure
+// with respect to their props.
