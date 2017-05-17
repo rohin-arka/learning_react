@@ -1,1 +1,2 @@
-import Hello from './Hello';
+import './Hello';
+import './Jsx';
