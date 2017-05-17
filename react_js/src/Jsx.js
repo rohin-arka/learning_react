@@ -72,12 +72,34 @@ const childrenDom  = (
                         // class is a single word due to conflict of name in reserve words of JSX
                         // it is className/
                         // tabindex is tabIndex.
-ReactDOM.render(childrenDom, dom);
+// ReactDOM.render(childrenDom, dom);
 
 
 // JSX prevents injext attacks
-const response = response.potentiallyMaliciousInput;
-
-const title = <h2>{response}</h2>;
+// const response = response.potentiallyMaliciousInput;
+// const title = <h2>{response}</h2>;
 
 // JSx representing objects
+// Babel compiles jsx expression to React.createElement() React class method createElement calls as.
+
+const jsxElement = {
+  <h1 className = 'hero' > Hellworld</h1>
+
+}
+
+// Below JSX expression are same :
+const babelExpression = React.createElement('h1', { className: 'hero' }, 'helloworld');
+// NOTE: the three parameter passed to createElement callsa are html element, its property class name.
+      // and content
+// React createElement performs a few checks to validated syntax and create below like objects
+
+const babelTypeCheckExpression = {
+  type: 'h1',
+  props: {
+    className: 'hero',
+    children: 'helloworld'
+  }
+};
+
+// These object(babelTypeCheckExpression) is known as reactelement.
+// React reads these objects and uses them to contruct dom and keep up to date.
