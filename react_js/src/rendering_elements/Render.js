@@ -32,3 +32,11 @@ setInterval(tick, 1000);
 // at a given time as passed in the second parameter.
 // above function is being passed and time in milliseconds is passed as second parameter.
 // It calls ReactDOM.render every second from a callback setInterval()
+
+// NOTE:
+// React only updates the dom that is changed
+// The power of react seems here the react dom element compares, its tree with the previous one and only
+// applies the dom updates the dom state.
+// this things are visible by inspecting element.
+// we are passing whole DOM tree in the render but react smart algorithm check diff and updte the dom state
+// which is changed.
