@@ -82,10 +82,7 @@ const childrenDom  = (
 // JSx representing objects
 // Babel compiles jsx expression to React.createElement() React class method createElement calls as.
 
-const jsxElement = {
-  <h1 className = 'hero' > Hellworld</h1>
-
-}
+const jsxElement = (<h1 className = 'hero' > Hellworld</h1>);
 
 // Below JSX expression are same :
 const babelExpression = React.createElement('h1', { className: 'hero' }, 'helloworld');
