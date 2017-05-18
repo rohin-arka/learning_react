@@ -21,7 +21,7 @@ ReactDOM.render(Welcome(props), document.getElementById('root'));
 
 // ES6 clases can also be used to define component which is known as class components
 // the above functional can als obe rewritten as class component as below
-// class WelcomeClass extends React.component{
+// class WelcomeClass extends React.Component{
 //   render(){
 //     return <h1>Hello, {this.props.name}</h1>;
 //   }
