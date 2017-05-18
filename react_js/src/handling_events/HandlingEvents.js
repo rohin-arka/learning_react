@@ -7,10 +7,10 @@ import ReactDOM from 'react-dom';
 // with jsx you pass a function as the event handler, rather than a string.
 
 // For example, the html
-<button onclick='activateUser()'>click to activate user</button>
-// Above HtML is slightly different than react way
-
-<button onClick={activateUser}>click to activate user</button>
+// <button onclick='activateUser()'>click to activate user</button>
+// // Above HtML is slightly different than react way
+//
+// <button onClick={activateUser}>click to activate user</button>
 
 // Another main important in react is false cannot be return to prevent DOM default behaviour.
 // You must call Prevent Default explicitly.
